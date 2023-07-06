@@ -5,7 +5,7 @@ import Articles from './collections/Articles';
 import Artwork from './collections/Artwork';
 import { Media } from './collections/Media';
 
-const addContentHub: Plugin = (incomingConfig: Config): Config => {
+export const addContentHub: Plugin = (incomingConfig: Config): Config => {
     // Find all incoming auth-enabled collections
     // so we can create a lastModifiedBy relationship field
     // to all auth collections
@@ -28,5 +28,3 @@ const addContentHub: Plugin = (incomingConfig: Config): Config => {
 
     return config;
 };
-
-export default addContentHub;

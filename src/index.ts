@@ -1,0 +1,1 @@
+export { addContentHub } from './plugin'
