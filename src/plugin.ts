@@ -9,7 +9,7 @@ export const addContentHub: Plugin = (incomingConfig: Config): Config => {
     // Find all incoming auth-enabled collections
     // so we can create a lastModifiedBy relationship field
     // to all auth collections
-    const authEnabledCollections = incomingConfig.collections.filter(
+    const authEnabledCollections = incomingConfig?.collections?.filter(
         collection => Boolean(collection.auth)
     );
 
