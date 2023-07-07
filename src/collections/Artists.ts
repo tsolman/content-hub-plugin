@@ -1,5 +1,4 @@
 import { CollectionConfig } from 'payload/types';
-import MarkdownPreview from '../custom_fields/MarkdownPreview';
 
 const Artists: CollectionConfig = {
     slug: 'artists',

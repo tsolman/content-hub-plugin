@@ -56,20 +56,10 @@ const Articles: CollectionConfig = {
             admin: {
                 components: {
                     Field: MarkdownPreview,
-                    // Cell: MyCustomUICell,
                 },
             },
         },
     ],
-    // admin: {
-    //     preview: (doc, { locale }) => {
-    //         if (doc?.slug) {
-    //             return `https://bigbird.com/preview/articles/${doc.slug}?locale=${locale}`;
-    //         }
-
-    //         return null;
-    //     },
-    // },
 };
 
 export default Articles;

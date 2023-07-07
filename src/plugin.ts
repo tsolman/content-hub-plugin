@@ -4,6 +4,7 @@ import Categories from './collections/Categories';
 import Articles from './collections/Articles';
 import Artwork from './collections/Artwork';
 import { Media } from './collections/Media';
+import Artists from './collections/Artists';
 
 export const addContentHub: Plugin = (incomingConfig: Config): Config => {
     // Find all incoming auth-enabled collections
@@ -23,6 +24,7 @@ export const addContentHub: Plugin = (incomingConfig: Config): Config => {
                 Articles,
                 Artwork,
                 Media,
+                Artists
             ]
     };
 
